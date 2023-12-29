@@ -1,0 +1,61 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SUCo
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import SUCo
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HVController : SwiftUI.UIHostingController<SwiftUI.AnyView> {
+  @_Concurrency.MainActor(unsafe) public var shouldRotate: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public init(shouldRotate: Swift.Bool, rootView: SwiftUI.AnyView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+public struct SupportedOrientationsPreferenceKey : SwiftUI.PreferenceKey {
+  public typealias Value = UIKit.UIInterfaceOrientationMask
+  public static var defaultValue: UIKit.UIInterfaceOrientationMask {
+    get
+  }
+  public static func reduce(value: inout UIKit.UIInterfaceOrientationMask, nextValue: () -> UIKit.UIInterfaceOrientationMask)
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OrientationLockedController<Content> : SwiftUI.UIHostingController<SUCo.OrientationLockedController<Content>.Root<Content>> where Content : SwiftUI.View {
+  public class Box {
+    public init()
+    @objc deinit
+  }
+  @_Concurrency.MainActor(unsafe) public var orientations: SUCo.OrientationLockedController<Content>.Box!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public init(rootView: Content)
+  public struct Root<Content> : SwiftUI.View where Content : SwiftUI.View {
+    @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+      get
+    }
+    public typealias Body = @_opaqueReturnTypeOf("$s4SUCo27OrientationLockedControllerC4RootV4bodyQrvp", 0) __<Content, Content>
+  }
+  @objc deinit
+}
+extension SwiftUI.View {
+  public func supportedOrientations(_ supportedOrientations: UIKit.UIInterfaceOrientationMask) -> some SwiftUI.View
+  
+}
+@_hasMissingDesignatedInitializers public class UCoordinator {
+  public static var navigation: UIKit.UINavigationController
+  @objc deinit
+  public static var inBackground: Swift.Bool
+  public static func shareImage(_ img: UIKit.UIImage)
+  public static func start(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
+  public static func popToRoot()
+  public static func moveToSUIView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ view: SwiftUI.AnyView, shouldRotate: Swift.Bool = false)
+  public static var popView: SwiftUI.UIHostingController<SwiftUI.AnyView>?
+  public static func hidePopView()
+  public static func popupToSUIView(_ view: SwiftUI.AnyView)
+  public static func moveToUIKitView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreFoundation.CGFloat = 0.25, _ viewController: UIKit.UIViewController)
+}
