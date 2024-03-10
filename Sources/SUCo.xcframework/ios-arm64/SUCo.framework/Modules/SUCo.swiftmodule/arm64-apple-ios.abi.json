@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "SUCo",
         "declAttributes": [
@@ -16,20 +16,27 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SUCo"
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
         "declKind": "Import",
         "moduleName": "SUCo"
       },
       {
         "kind": "TypeDecl",
-        "name": "HVController",
-        "printedName": "HVController",
+        "name": "SUCoordinator",
+        "printedName": "SUCoordinator",
         "children": [
           {
             "kind": "Var",
-            "name": "shouldRotate",
-            "printedName": "shouldRotate",
+            "name": "hideStusBar",
+            "printedName": "hideStusBar",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39,8 +46,1134 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:4SUCo12HVControllerC12shouldRotateSbvp",
-            "mangledName": "$s4SUCo12HVControllerC12shouldRotateSbvp",
+            "usr": "s:4SUCo13SUCoordinatorC11hideStusBarSbvpZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC11hideStusBarSbvpZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC11hideStusBarSbvgZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC11hideStusBarSbvgZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC11hideStusBarSbvsZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC11hideStusBarSbvsZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC11hideStusBarSbvMZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC11hideStusBarSbvMZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(statusBarIsHidden:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC5setup17statusBarIsHiddenySb_tFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC5setup17statusBarIsHiddenySb_tFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "navigation",
+            "printedName": "navigation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "SUCo.HiddableNavController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HiddableNavController",
+                    "printedName": "SUCo.HiddableNavController",
+                    "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvpZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvpZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "SUCo.HiddableNavController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HiddableNavController",
+                        "printedName": "SUCo.HiddableNavController",
+                        "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvgZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvgZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "SUCo.HiddableNavController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HiddableNavController",
+                        "printedName": "SUCo.HiddableNavController",
+                        "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvsZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvsZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvMZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC10navigationAA21HiddableNavControllerCSgvMZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inBackground",
+            "printedName": "inBackground",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo13SUCoordinatorC12inBackgroundSbvpZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC12inBackgroundSbvpZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC12inBackgroundSbvgZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC12inBackgroundSbvgZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC12inBackgroundSbvsZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC12inBackgroundSbvsZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC12inBackgroundSbvMZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC12inBackgroundSbvMZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "shareVideo",
+            "printedName": "shareVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC10shareVideoyy10Foundation3URLVFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC10shareVideoyy10Foundation3URLVFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareAssets",
+            "printedName": "shareAssets(assets:comp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Photos.PHAsset]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PHAsset",
+                    "printedName": "Photos.PHAsset",
+                    "usr": "c:objc(cs)PHAsset"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC11shareAssets6assets4compySaySo7PHAssetCG_yyctFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC11shareAssets6assets4compySaySo7PHAssetCG_yyctFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shareImage",
+            "printedName": "shareImage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC10shareImageyySo7UIImageCFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC10shareImageyySo7UIImageCFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(from:type:duration:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionSubtype",
+                "printedName": "QuartzCore.CATransitionSubtype",
+                "usr": "c:@T@CATransitionSubtype"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionType",
+                "printedName": "QuartzCore.CATransitionType",
+                "usr": "c:@T@CATransitionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC5start4from4type8duration_ySo19CATransitionSubtypea_So0G4Typea14CoreFoundation7CGFloatV7SwiftUI7AnyViewVtFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC5start4from4type8duration_ySo19CATransitionSubtypea_So0G4Typea12CoreGraphics7CGFloatV7SwiftUI7AnyViewVtFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popToRoot",
+            "printedName": "popToRoot()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC9popToRootyyFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC9popToRootyyFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "moveToSUIView",
+            "printedName": "moveToSUIView(from:type:duration:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionSubtype",
+                "printedName": "QuartzCore.CATransitionSubtype",
+                "usr": "c:@T@CATransitionSubtype"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionType",
+                "printedName": "QuartzCore.CATransitionType",
+                "usr": "c:@T@CATransitionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC13moveToSUIView4from4type8duration_ySo19CATransitionSubtypea_So0I4Typea14CoreFoundation7CGFloatV7SwiftUI7AnyViewVtFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC13moveToSUIView4from4type8duration_ySo19CATransitionSubtypea_So0I4Typea12CoreGraphics7CGFloatV7SwiftUI7AnyViewVtFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "popView",
+            "printedName": "popView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIHostingController",
+                    "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyView",
+                        "printedName": "SwiftUI.AnyView",
+                        "usr": "s:7SwiftUI7AnyViewV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI19UIHostingControllerC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvpZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvpZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIHostingController",
+                        "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnyView",
+                            "printedName": "SwiftUI.AnyView",
+                            "usr": "s:7SwiftUI7AnyViewV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI19UIHostingControllerC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvgZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvgZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIHostingController",
+                        "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnyView",
+                            "printedName": "SwiftUI.AnyView",
+                            "usr": "s:7SwiftUI7AnyViewV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI19UIHostingControllerC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvsZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvsZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvMZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvMZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popKitView",
+            "printedName": "popKitView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvpZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvpZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvgZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvgZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvsZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvsZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvMZ",
+                "mangledName": "$s4SUCo13SUCoordinatorC10popKitViewSo16UIViewControllerCSgvMZ",
+                "moduleName": "SUCo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hidePopView",
+            "printedName": "hidePopView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC11hidePopViewyyFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC11hidePopViewyyFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popupToSUIView",
+            "printedName": "popupToSUIView(_:presentationStyle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIModalPresentationStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIModalPresentationStyle",
+                    "printedName": "UIKit.UIModalPresentationStyle",
+                    "usr": "c:@E@UIModalPresentationStyle"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC14popupToSUIView_17presentationStyley7SwiftUI7AnyViewV_So019UIModalPresentationG0VSgtFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC14popupToSUIView_17presentationStyley7SwiftUI7AnyViewV_So019UIModalPresentationG0VSgtFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popupToUIKitView",
+            "printedName": "popupToUIKitView(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC16popupToUIKitViewyySo16UIViewControllerCFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC16popupToUIKitViewyySo16UIViewControllerCFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hidePopKitView",
+            "printedName": "hidePopKitView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC14hidePopKitViewyyFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC14hidePopKitViewyyFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "moveToUIKitView",
+            "printedName": "moveToUIKitView(from:type:duration:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionSubtype",
+                "printedName": "QuartzCore.CATransitionSubtype",
+                "usr": "c:@T@CATransitionSubtype"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionType",
+                "printedName": "QuartzCore.CATransitionType",
+                "usr": "c:@T@CATransitionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC15moveToUIKitView4from4type8duration_ySo19CATransitionSubtypea_So0J4Typea14CoreFoundation7CGFloatVSo16UIViewControllerCtFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC15moveToUIKitView4from4type8duration_ySo19CATransitionSubtypea_So0J4Typea12CoreGraphics7CGFloatVSo16UIViewControllerCtFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "moveToNext",
+            "printedName": "moveToNext(from:type:duration:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionSubtype",
+                "printedName": "QuartzCore.CATransitionSubtype",
+                "usr": "c:@T@CATransitionSubtype"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CATransitionType",
+                "printedName": "QuartzCore.CATransitionType",
+                "usr": "c:@T@CATransitionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC10moveToNext4from4type8duration_ySo19CATransitionSubtypea_So0I4Typea14CoreFoundation7CGFloatV7SwiftUI7AnyViewVtFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC10moveToNext4from4type8duration_ySo19CATransitionSubtypea_So0I4Typea12CoreGraphics7CGFloatV7SwiftUI7AnyViewVtFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "moveBack",
+            "printedName": "moveBack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC8moveBackyyFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC8moveBackyyFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(message:shouldShowGoToSettingsButton:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4SUCo13SUCoordinatorC4show7message28shouldShowGoToSettingsButtonySS_SbtFZ",
+            "mangledName": "$s4SUCo13SUCoordinatorC4show7message28shouldShowGoToSettingsButtonySS_SbtFZ",
+            "moduleName": "SUCo",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4SUCo13SUCoordinatorC",
+        "mangledName": "$s4SUCo13SUCoordinatorC",
+        "moduleName": "SUCo",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HiddableNavController",
+        "printedName": "HiddableNavController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "statusBarHidden",
+            "printedName": "statusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo21HiddableNavControllerC15statusBarHiddenSbvp",
+            "mangledName": "$s4SUCo21HiddableNavControllerC15statusBarHiddenSbvp",
             "moduleName": "SUCo",
             "declAttributes": [
               "Custom",
@@ -62,8 +1195,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4SUCo12HVControllerC12shouldRotateSbvg",
-                "mangledName": "$s4SUCo12HVControllerC12shouldRotateSbvg",
+                "usr": "s:4SUCo21HiddableNavControllerC15statusBarHiddenSbvg",
+                "mangledName": "$s4SUCo21HiddableNavControllerC15statusBarHiddenSbvg",
                 "moduleName": "SUCo",
                 "implicit": true,
                 "accessorKind": "get"
@@ -86,8 +1219,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4SUCo12HVControllerC12shouldRotateSbvs",
-                "mangledName": "$s4SUCo12HVControllerC12shouldRotateSbvs",
+                "usr": "s:4SUCo21HiddableNavControllerC15statusBarHiddenSbvs",
+                "mangledName": "$s4SUCo21HiddableNavControllerC15statusBarHiddenSbvs",
                 "moduleName": "SUCo",
                 "implicit": true,
                 "accessorKind": "set"
@@ -104,8 +1237,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4SUCo12HVControllerC12shouldRotateSbvM",
-                "mangledName": "$s4SUCo12HVControllerC12shouldRotateSbvM",
+                "usr": "s:4SUCo21HiddableNavControllerC15statusBarHiddenSbvM",
+                "mangledName": "$s4SUCo21HiddableNavControllerC15statusBarHiddenSbvM",
                 "moduleName": "SUCo",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -115,41 +1248,44 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(shouldRotate:rootView:)",
+            "printedName": "init(statusBarIsHidden:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "HVController",
-                "printedName": "SUCo.HVController",
-                "usr": "s:4SUCo12HVControllerC"
+                "name": "Optional",
+                "printedName": "SUCo.HiddableNavController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HiddableNavController",
+                    "printedName": "SUCo.HiddableNavController",
+                    "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AnyView",
-                "printedName": "SwiftUI.AnyView",
-                "usr": "s:7SwiftUI7AnyViewV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:4SUCo12HVControllerC12shouldRotate8rootViewACSb_7SwiftUI03AnyF0Vtcfc",
-            "mangledName": "$s4SUCo12HVControllerC12shouldRotate8rootViewACSb_7SwiftUI03AnyF0Vtcfc",
+            "usr": "s:4SUCo21HiddableNavControllerC17statusBarIsHiddenACSgSb_tcfc",
+            "mangledName": "$s4SUCo21HiddableNavControllerC17statusBarIsHiddenACSgSb_tcfc",
             "moduleName": "SUCo",
             "declAttributes": [
               "Custom",
+              "Required",
               "AccessControl"
             ],
             "init_kind": "Designated"
           },
           {
             "kind": "Var",
-            "name": "shouldAutorotate",
-            "printedName": "shouldAutorotate",
+            "name": "prefersStatusBarHidden",
+            "printedName": "prefersStatusBarHidden",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -159,17 +1295,17 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:4SUCo12HVControllerC16shouldAutorotateSbvp",
-            "mangledName": "$s4SUCo12HVControllerC16shouldAutorotateSbvp",
+            "usr": "c:@M@SUCo@objc(cs)HiddableNavController(py)prefersStatusBarHidden",
+            "mangledName": "$s4SUCo21HiddableNavControllerC22prefersStatusBarHiddenSbvp",
             "moduleName": "SUCo",
             "overriding": true,
-            "objc_name": "shouldAutorotate",
+            "objc_name": "prefersStatusBarHidden",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "Custom",
-              "AccessControl",
-              "Override"
+              "Override",
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -185,11 +1321,422 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4SUCo12HVControllerC16shouldAutorotateSbvg",
-                "mangledName": "$s4SUCo12HVControllerC16shouldAutorotateSbvg",
+                "usr": "c:@M@SUCo@objc(cs)HiddableNavController(im)prefersStatusBarHidden",
+                "mangledName": "$s4SUCo21HiddableNavControllerC22prefersStatusBarHiddenSbvg",
                 "moduleName": "SUCo",
                 "overriding": true,
-                "objc_name": "shouldAutorotate",
+                "objc_name": "prefersStatusBarHidden",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(navigationBarClass:toolbarClass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HiddableNavController",
+                "printedName": "SUCo.HiddableNavController",
+                "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnyObject.Type?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnyObject.Type?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SUCo@objc(cs)HiddableNavController(im)initWithNavigationBarClass:toolbarClass:",
+            "mangledName": "$s4SUCo21HiddableNavControllerC18navigationBarClass07toolbarG0ACyXlXpSg_AFtcfc",
+            "moduleName": "SUCo",
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "5.0",
+            "objc_name": "initWithNavigationBarClass:toolbarClass:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "Available"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rootViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HiddableNavController",
+                "printedName": "SUCo.HiddableNavController",
+                "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SUCo@objc(cs)HiddableNavController(im)initWithRootViewController:",
+            "mangledName": "$s4SUCo21HiddableNavControllerC08rootViewD0ACSo06UIViewD0C_tcfc",
+            "moduleName": "SUCo",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithRootViewController:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HiddableNavController",
+                "printedName": "SUCo.HiddableNavController",
+                "usr": "c:@M@SUCo@objc(cs)HiddableNavController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SUCo@objc(cs)HiddableNavController(im)initWithNibName:bundle:",
+            "mangledName": "$s4SUCo21HiddableNavControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "SUCo",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SUCo@objc(cs)HiddableNavController",
+        "mangledName": "$s4SUCo21HiddableNavControllerC",
+        "moduleName": "SUCo",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UINavigationController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UINavigationController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HVController",
+        "printedName": "HVController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "statusBarHidden",
+            "printedName": "statusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo12HVControllerC15statusBarHiddenSbvp",
+            "mangledName": "$s4SUCo12HVControllerC15statusBarHiddenSbvp",
+            "moduleName": "SUCo",
+            "declAttributes": [
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo12HVControllerC15statusBarHiddenSbvg",
+                "mangledName": "$s4SUCo12HVControllerC15statusBarHiddenSbvg",
+                "moduleName": "SUCo",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo12HVControllerC15statusBarHiddenSbvs",
+                "mangledName": "$s4SUCo12HVControllerC15statusBarHiddenSbvs",
+                "moduleName": "SUCo",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo12HVControllerC15statusBarHiddenSbvM",
+                "mangledName": "$s4SUCo12HVControllerC15statusBarHiddenSbvM",
+                "moduleName": "SUCo",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rootView:statusBarIsHidden:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HVController",
+                "printedName": "SUCo.HVController",
+                "usr": "s:4SUCo12HVControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4SUCo12HVControllerC8rootView17statusBarIsHiddenAC7SwiftUI03AnyD0V_Sbtcfc",
+            "mangledName": "$s4SUCo12HVControllerC8rootView17statusBarIsHiddenAC7SwiftUI03AnyD0V_Sbtcfc",
+            "moduleName": "SUCo",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "prefersStatusBarHidden",
+            "printedName": "prefersStatusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4SUCo12HVControllerC22prefersStatusBarHiddenSbvp",
+            "mangledName": "$s4SUCo12HVControllerC22prefersStatusBarHiddenSbvp",
+            "moduleName": "SUCo",
+            "overriding": true,
+            "objc_name": "prefersStatusBarHidden",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4SUCo12HVControllerC22prefersStatusBarHiddenSbvg",
+                "mangledName": "$s4SUCo12HVControllerC22prefersStatusBarHiddenSbvg",
+                "moduleName": "SUCo",
+                "overriding": true,
+                "objc_name": "prefersStatusBarHidden",
                 "declAttributes": [
                   "Dynamic",
                   "ObjC"
@@ -348,728 +1895,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "_UIHostingViewable",
-            "printedName": "_UIHostingViewable",
-            "usr": "s:7SwiftUI18_UIHostingViewableP",
-            "mangledName": "$s7SwiftUI18_UIHostingViewableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "SUCo"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SupportedOrientationsPreferenceKey",
-        "printedName": "SupportedOrientationsPreferenceKey",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "defaultValue",
-            "printedName": "defaultValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV12defaultValueSo26UIInterfaceOrientationMaskVvpZ",
-            "mangledName": "$s4SUCo34SupportedOrientationsPreferenceKeyV12defaultValueSo26UIInterfaceOrientationMaskVvpZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV12defaultValueSo26UIInterfaceOrientationMaskVvgZ",
-                "mangledName": "$s4SUCo34SupportedOrientationsPreferenceKeyV12defaultValueSo26UIInterfaceOrientationMaskVvgZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "reduce",
-            "printedName": "reduce(value:nextValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "paramValueOwnership": "InOut",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> UIKit.UIInterfaceOrientationMask",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV6reduce5value9nextValueySo26UIInterfaceOrientationMaskVz_AHyXEtFZ",
-            "mangledName": "$s4SUCo34SupportedOrientationsPreferenceKeyV6reduce5value9nextValueySo26UIInterfaceOrientationMaskVz_AHyXEtFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV",
-        "mangledName": "$s4SUCo34SupportedOrientationsPreferenceKeyV",
-        "moduleName": "SUCo",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "PreferenceKey",
-            "printedName": "PreferenceKey",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Value",
-                "printedName": "Value",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI13PreferenceKeyP",
-            "mangledName": "$s7SwiftUI13PreferenceKeyP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OrientationLockedController",
-        "printedName": "OrientationLockedController",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "Box",
-            "printedName": "Box",
-            "children": [
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Box",
-                    "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box",
-                    "usr": "s:4SUCo27OrientationLockedControllerC3BoxC"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:4SUCo27OrientationLockedControllerC3BoxCAEyx_Gycfc",
-                "mangledName": "$s4SUCo27OrientationLockedControllerC3BoxCAEyx_Gycfc",
-                "moduleName": "SUCo",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:4SUCo27OrientationLockedControllerC3BoxC",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC3BoxC",
-            "moduleName": "SUCo",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-            "declAttributes": [
-              "AccessControl"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "orientations",
-            "printedName": "orientations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Box",
-                    "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box",
-                    "usr": "s:4SUCo27OrientationLockedControllerC3BoxC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvp",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvp",
-            "moduleName": "SUCo",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Box",
-                        "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box",
-                        "usr": "s:4SUCo27OrientationLockedControllerC3BoxC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvg",
-                "mangledName": "$s4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvg",
-                "moduleName": "SUCo",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Box",
-                        "printedName": "SUCo.OrientationLockedController<τ_0_0>.Box",
-                        "usr": "s:4SUCo27OrientationLockedControllerC3BoxC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvs",
-                "mangledName": "$s4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvs",
-                "moduleName": "SUCo",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvM",
-                "mangledName": "$s4SUCo27OrientationLockedControllerC12orientationsAC3BoxCyx_GSgvM",
-                "moduleName": "SUCo",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "supportedInterfaceOrientations",
-            "printedName": "supportedInterfaceOrientations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4SUCo27OrientationLockedControllerC30supportedInterfaceOrientationsSo011UIInterfaceB4MaskVvp",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC30supportedInterfaceOrientationsSo011UIInterfaceB4MaskVvp",
-            "moduleName": "SUCo",
-            "overriding": true,
-            "objc_name": "supportedInterfaceOrientations",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo27OrientationLockedControllerC30supportedInterfaceOrientationsSo011UIInterfaceB4MaskVvg",
-                "mangledName": "$s4SUCo27OrientationLockedControllerC30supportedInterfaceOrientationsSo011UIInterfaceB4MaskVvg",
-                "moduleName": "SUCo",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "overriding": true,
-                "objc_name": "supportedInterfaceOrientations",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rootView:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OrientationLockedController",
-                "printedName": "SUCo.OrientationLockedController<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:4SUCo27OrientationLockedControllerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4SUCo27OrientationLockedControllerC8rootViewACyxGx_tcfc",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC8rootViewACyxGx_tcfc",
-            "moduleName": "SUCo",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Root",
-            "printedName": "Root",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "body",
-                "printedName": "body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ModifiedContent",
-                    "printedName": "SwiftUI.ModifiedContent<τ_1_0, SwiftUI._PreferenceActionModifier<SUCo.SupportedOrientationsPreferenceKey>>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "_PreferenceActionModifier",
-                        "printedName": "SwiftUI._PreferenceActionModifier<SUCo.SupportedOrientationsPreferenceKey>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "SupportedOrientationsPreferenceKey",
-                            "printedName": "SUCo.SupportedOrientationsPreferenceKey",
-                            "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV"
-                          }
-                        ],
-                        "usr": "s:7SwiftUI25_PreferenceActionModifierV"
-                      }
-                    ],
-                    "usr": "s:7SwiftUI15ModifiedContentV"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:4SUCo27OrientationLockedControllerC4RootV4bodyQrvp",
-                "mangledName": "$s4SUCo27OrientationLockedControllerC4RootV4bodyQrvp",
-                "moduleName": "SUCo",
-                "declAttributes": [
-                  "Custom",
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ModifiedContent",
-                        "printedName": "SwiftUI.ModifiedContent<τ_1_0, SwiftUI._PreferenceActionModifier<SUCo.SupportedOrientationsPreferenceKey>>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_1_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "_PreferenceActionModifier",
-                            "printedName": "SwiftUI._PreferenceActionModifier<SUCo.SupportedOrientationsPreferenceKey>",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "SupportedOrientationsPreferenceKey",
-                                "printedName": "SUCo.SupportedOrientationsPreferenceKey",
-                                "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV"
-                              }
-                            ],
-                            "usr": "s:7SwiftUI25_PreferenceActionModifierV"
-                          }
-                        ],
-                        "usr": "s:7SwiftUI15ModifiedContentV"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:4SUCo27OrientationLockedControllerC4RootV4bodyQrvg",
-                    "mangledName": "$s4SUCo27OrientationLockedControllerC4RootV4bodyQrvg",
-                    "moduleName": "SUCo",
-                    "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
-                    "sugared_genericSig": "<Content, Content where Content : SwiftUI.View, Content : SwiftUI.View>",
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:4SUCo27OrientationLockedControllerC4RootV",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC4RootV",
-            "moduleName": "SUCo",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content, Content where Content : SwiftUI.View, Content : SwiftUI.View>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "View",
-                "printedName": "View",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "Body",
-                    "printedName": "Body",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ModifiedContent",
-                        "printedName": "SwiftUI.ModifiedContent<τ_1_0, SwiftUI._PreferenceActionModifier<SUCo.SupportedOrientationsPreferenceKey>>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_1_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "_PreferenceActionModifier",
-                            "printedName": "SwiftUI._PreferenceActionModifier<SUCo.SupportedOrientationsPreferenceKey>",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "SupportedOrientationsPreferenceKey",
-                                "printedName": "SUCo.SupportedOrientationsPreferenceKey",
-                                "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV"
-                              }
-                            ],
-                            "usr": "s:7SwiftUI25_PreferenceActionModifierV"
-                          }
-                        ],
-                        "usr": "s:7SwiftUI15ModifiedContentV"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:7SwiftUI4ViewP",
-                "mangledName": "$s7SwiftUI4ViewP"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rootView:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OrientationLockedController",
-                "printedName": "SUCo.OrientationLockedController<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:4SUCo27OrientationLockedControllerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Root",
-                "printedName": "SUCo.OrientationLockedController<τ_0_0>.Root<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:4SUCo27OrientationLockedControllerC4RootV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4SUCo27OrientationLockedControllerC8rootViewACyxGAC4RootVyx_xG_tcfc",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC8rootViewACyxGAC4RootVyx_xG_tcfc",
-            "moduleName": "SUCo",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-            "overriding": true,
-            "implicit": true,
-            "declAttributes": [
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:rootView:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SUCo.OrientationLockedController<τ_0_0>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OrientationLockedController",
-                    "printedName": "SUCo.OrientationLockedController<τ_0_0>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:4SUCo27OrientationLockedControllerC"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Root",
-                "printedName": "SUCo.OrientationLockedController<τ_0_0>.Root<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:4SUCo27OrientationLockedControllerC4RootV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4SUCo27OrientationLockedControllerC5coder8rootViewACyxGSgSo7NSCoderC_AC4RootVyx_xGtcfc",
-            "mangledName": "$s4SUCo27OrientationLockedControllerC5coder8rootViewACyxGSgSo7NSCoderC_AC4RootVyx_xGtcfc",
-            "moduleName": "SUCo",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-            "overriding": true,
-            "implicit": true,
-            "declAttributes": [
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:4SUCo27OrientationLockedControllerC",
-        "mangledName": "$s4SUCo27OrientationLockedControllerC",
-        "moduleName": "SUCo",
-        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "superclassUsr": "s:7SwiftUI19UIHostingControllerC",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "SwiftUI.UIHostingController<SUCo.OrientationLockedController<τ_0_0>.Root<τ_0_0>>",
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -1079,994 +1908,395 @@
             "mangledName": "$s7SwiftUI18_UIHostingViewableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "SUCo",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SUCo"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UCoordinator",
-        "printedName": "UCoordinator",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "navigation",
-            "printedName": "navigation",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UINavigationController",
-                "printedName": "UIKit.UINavigationController",
-                "usr": "c:objc(cs)UINavigationController"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvpZ",
-            "mangledName": "$s4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvpZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UINavigationController",
-                    "printedName": "UIKit.UINavigationController",
-                    "usr": "c:objc(cs)UINavigationController"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvgZ",
-                "mangledName": "$s4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvgZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UINavigationController",
-                    "printedName": "UIKit.UINavigationController",
-                    "usr": "c:objc(cs)UINavigationController"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvsZ",
-                "mangledName": "$s4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvsZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvMZ",
-                "mangledName": "$s4SUCo12UCoordinatorC10navigationSo22UINavigationControllerCvMZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "inBackground",
-            "printedName": "inBackground",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4SUCo12UCoordinatorC12inBackgroundSbvpZ",
-            "mangledName": "$s4SUCo12UCoordinatorC12inBackgroundSbvpZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC12inBackgroundSbvgZ",
-                "mangledName": "$s4SUCo12UCoordinatorC12inBackgroundSbvgZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC12inBackgroundSbvsZ",
-                "mangledName": "$s4SUCo12UCoordinatorC12inBackgroundSbvsZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC12inBackgroundSbvMZ",
-                "mangledName": "$s4SUCo12UCoordinatorC12inBackgroundSbvMZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "shareImage",
-            "printedName": "shareImage(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC10shareImageyySo7UIImageCFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC10shareImageyySo7UIImageCFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start(from:type:duration:_:shouldRotate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CATransitionSubtype",
-                "printedName": "QuartzCore.CATransitionSubtype",
-                "usr": "c:@T@CATransitionSubtype"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CATransitionType",
-                "printedName": "QuartzCore.CATransitionType",
-                "usr": "c:@T@CATransitionType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AnyView",
-                "printedName": "SwiftUI.AnyView",
-                "usr": "s:7SwiftUI7AnyViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC5start4from4type8duration_12shouldRotateySo19CATransitionSubtypea_So0I4Typea14CoreFoundation7CGFloatV7SwiftUI7AnyViewVSbtFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC5start4from4type8duration_12shouldRotateySo19CATransitionSubtypea_So0I4Typea12CoreGraphics7CGFloatV7SwiftUI7AnyViewVSbtFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "popToRoot",
-            "printedName": "popToRoot()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC9popToRootyyFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC9popToRootyyFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "moveToSUIView",
-            "printedName": "moveToSUIView(from:type:duration:_:shouldRotate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CATransitionSubtype",
-                "printedName": "QuartzCore.CATransitionSubtype",
-                "usr": "c:@T@CATransitionSubtype"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CATransitionType",
-                "printedName": "QuartzCore.CATransitionType",
-                "usr": "c:@T@CATransitionType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AnyView",
-                "printedName": "SwiftUI.AnyView",
-                "usr": "s:7SwiftUI7AnyViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC13moveToSUIView4from4type8duration_12shouldRotateySo19CATransitionSubtypea_So0K4Typea14CoreFoundation7CGFloatV7SwiftUI7AnyViewVSbtFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC13moveToSUIView4from4type8duration_12shouldRotateySo19CATransitionSubtypea_So0K4Typea12CoreGraphics7CGFloatV7SwiftUI7AnyViewVSbtFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "popView",
-            "printedName": "popView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIHostingController",
-                    "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AnyView",
-                        "printedName": "SwiftUI.AnyView",
-                        "usr": "s:7SwiftUI7AnyViewV"
-                      }
-                    ],
-                    "usr": "s:7SwiftUI19UIHostingControllerC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvpZ",
-            "mangledName": "$s4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvpZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIHostingController",
-                        "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AnyView",
-                            "printedName": "SwiftUI.AnyView",
-                            "usr": "s:7SwiftUI7AnyViewV"
-                          }
-                        ],
-                        "usr": "s:7SwiftUI19UIHostingControllerC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvgZ",
-                "mangledName": "$s4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvgZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIHostingController",
-                        "printedName": "SwiftUI.UIHostingController<SwiftUI.AnyView>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AnyView",
-                            "printedName": "SwiftUI.AnyView",
-                            "usr": "s:7SwiftUI7AnyViewV"
-                          }
-                        ],
-                        "usr": "s:7SwiftUI19UIHostingControllerC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvsZ",
-                "mangledName": "$s4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvsZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvMZ",
-                "mangledName": "$s4SUCo12UCoordinatorC7popView7SwiftUI19UIHostingControllerCyAE03AnyD0VGSgvMZ",
-                "moduleName": "SUCo",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hidePopView",
-            "printedName": "hidePopView()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC11hidePopViewyyFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC11hidePopViewyyFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "popupToSUIView",
-            "printedName": "popupToSUIView(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AnyView",
-                "printedName": "SwiftUI.AnyView",
-                "usr": "s:7SwiftUI7AnyViewV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC14popupToSUIViewyy7SwiftUI7AnyViewVFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC14popupToSUIViewyy7SwiftUI7AnyViewVFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "moveToUIKitView",
-            "printedName": "moveToUIKitView(from:type:duration:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CATransitionSubtype",
-                "printedName": "QuartzCore.CATransitionSubtype",
-                "usr": "c:@T@CATransitionSubtype"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CATransitionType",
-                "printedName": "QuartzCore.CATransitionType",
-                "usr": "c:@T@CATransitionType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4SUCo12UCoordinatorC15moveToUIKitView4from4type8duration_ySo19CATransitionSubtypea_So0J4Typea14CoreFoundation7CGFloatVSo16UIViewControllerCtFZ",
-            "mangledName": "$s4SUCo12UCoordinatorC15moveToUIKitView4from4type8duration_ySo19CATransitionSubtypea_So0J4Typea12CoreGraphics7CGFloatVSo16UIViewControllerCtFZ",
-            "moduleName": "SUCo",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:4SUCo12UCoordinatorC",
-        "mangledName": "$s4SUCo12UCoordinatorC",
-        "moduleName": "SUCo",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "View",
-        "printedName": "View",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "supportedOrientations",
-            "printedName": "supportedOrientations(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ModifiedContent",
-                "printedName": "SwiftUI.ModifiedContent<τ_0_0, SwiftUI._PreferenceWritingModifier<SUCo.SupportedOrientationsPreferenceKey>>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "_PreferenceWritingModifier",
-                    "printedName": "SwiftUI._PreferenceWritingModifier<SUCo.SupportedOrientationsPreferenceKey>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "SupportedOrientationsPreferenceKey",
-                        "printedName": "SUCo.SupportedOrientationsPreferenceKey",
-                        "usr": "s:4SUCo34SupportedOrientationsPreferenceKeyV"
-                      }
-                    ],
-                    "usr": "s:7SwiftUI26_PreferenceWritingModifierV"
-                  }
-                ],
-                "usr": "s:7SwiftUI15ModifiedContentV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP4SUCoE21supportedOrientationsyQrSo26UIInterfaceOrientationMaskVF",
-            "mangledName": "$s7SwiftUI4ViewP4SUCoE21supportedOrientationsyQrSo26UIInterfaceOrientationMaskVF",
-            "moduleName": "SUCo",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:7SwiftUI4ViewP",
-        "mangledName": "$s7SwiftUI4ViewP",
-        "moduleName": "SwiftUI",
-        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
-        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13.0",
-        "intro_tvOS": "13.0",
-        "intro_watchOS": "6.0",
-        "declAttributes": [
-          "TypeEraser",
-          "Available",
-          "Available",
-          "Available",
-          "Available"
-        ],
-        "isExternal": true
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/HVController.swift",
-      "kind": "StringLiteral",
-      "offset": 433,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/HVController.swift",
-      "kind": "StringLiteral",
-      "offset": 137,
-      "length": 12,
-      "value": "\"SUCo.HVController\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/HVController.swift",
-      "kind": "StringLiteral",
-      "offset": 137,
-      "length": 12,
-      "value": "\"SUCo.HVController\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/HVController.swift",
-      "kind": "StringLiteral",
-      "offset": 2227,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/HVController.swift",
-      "kind": "StringLiteral",
-      "offset": 1346,
-      "length": 27,
-      "value": "\"SUCo.OrientationLockedController\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/HVController.swift",
-      "kind": "StringLiteral",
-      "offset": 1346,
-      "length": 27,
-      "value": "\"SUCo.OrientationLockedController\""
-    },
-    {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 277,
+      "offset": 418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 858,
+      "offset": 1150,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1622,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "Array",
+      "offset": 1852,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1930,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2785,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 2836,
+      "length": 90,
+      "value": "\"Cannot present activity view controller. Navigation view is not in the window hierarchy.\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3542,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 990,
+      "offset": 3670,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1032,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1202,
+      "offset": 3864,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 1597,
-      "length": 68,
-      "value": "\"navigation CATransaction begin:\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 1664,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1752,
+      "offset": 4416,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 1876,
+      "offset": 4540,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 1938,
+      "offset": 4602,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 1963,
+      "offset": 4627,
       "length": 71,
       "value": "\"navigation Completion Block :\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 2033,
+      "offset": 4697,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2332,
+      "offset": 4996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 2561,
+      "offset": 5225,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2603,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2777,
+      "offset": 5419,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 3172,
-      "length": 68,
-      "value": "\"navigation CATransaction begin:\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 3239,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3327,
+      "offset": 5971,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3456,
+      "offset": 6100,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3535,
+      "offset": 6179,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 3574,
+      "offset": 6218,
       "length": 71,
       "value": "\"navigation Completion Block :\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 3644,
+      "offset": 6288,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4101,
+      "offset": 6758,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4345,
+      "offset": 7079,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 4382,
-      "length": 68,
-      "value": "\"navigation CATransaction begin:\""
-    },
-    {
-      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
-      "kind": "StringLiteral",
-      "offset": 4449,
-      "length": 2,
-      "value": "\"\""
+      "kind": "BooleanLiteral",
+      "offset": 7248,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4504,
+      "offset": 7447,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7507,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7690,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "FloatLiteral",
-      "offset": 4640,
+      "offset": 7858,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4787,
+      "offset": 8005,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5174,
+      "offset": 8392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 5312,
+      "offset": 8530,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
       "kind": "IntegerLiteral",
-      "offset": 5374,
+      "offset": 8592,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "FloatLiteral",
+      "offset": 8731,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8927,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9301,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 9487,
+      "length": 67,
+      "value": "\"navigation begin to move back:\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 9553,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9612,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 9637,
+      "length": 59,
+      "value": "\"navigation moved back:\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 9695,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 10047,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 10180,
+      "length": 16,
+      "value": "\"Go to Settings\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "Dictionary",
+      "offset": 10383,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10571,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 10917,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11034,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 10616,
+      "length": 21,
+      "value": "\"SUCo.HiddableNavController\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 10616,
+      "length": 21,
+      "value": "\"SUCo.HiddableNavController\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 10616,
+      "length": 21,
+      "value": "\"SUCo.HiddableNavController\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 11375,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 11067,
+      "length": 12,
+      "value": "\"SUCo.HVController\""
+    },
+    {
+      "filePath": "\/Users\/demiannezhdanov\/Projects\/myFRAMEWORKS\/FRamework\/SUCo\/SUCo\/SUCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 11067,
+      "length": 12,
+      "value": "\"SUCo.HVController\""
     }
   ]
 }
