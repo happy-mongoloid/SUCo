@@ -1,23 +1,32 @@
-// swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.7
 
 import PackageDescription
-
 
 let package = Package(
     name: "SUCo",
     platforms: [
-        .macOS(.v12), .iOS(.v15)
+        .iOS(.v13)
     ],
     products: [
         .library(
             name: "SUCo",
-            targets: ["SUCo"])
+            targets: ["SUCo"]
+        )
     ],
-    dependencies: [],
+    dependencies: [
+        // Add any external package dependencies here, if needed.
+    ],
     targets: [
         .binaryTarget(
             name: "SUCo",
-            path: "./Sources/SUCo.xcframework")
+            path: "Sources/SUCo.xcframework"
+        ),
+        .target(
+            name: "SUCo",
+            dependencies: [
+                "SUCo"
+            ],
+            path: "Sources"
+        )
     ]
 )

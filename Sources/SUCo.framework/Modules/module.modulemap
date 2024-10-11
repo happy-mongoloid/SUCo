@@ -1,0 +1,11 @@
+framework module SUCo {
+  umbrella header "SUCo.h"
+  export *
+
+  module * { export * }
+}
+
+module SUCo.Swift {
+  header "SUCo-Swift.h"
+  requires objc
+}
